@@ -1,11 +1,4 @@
 <?php
-// ----- Just so that people don't come into this page via URL ------
-include_once 'functions.php';
-sessStart_admin(true);
-// ----------------------------------------------------------------
-?>
-
-<?php
 // RECAPTCHA TEMPLATE 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //$recaptchaSecretKey = "YOUR_SERVER_SIDE_SECRET_KEY"; // Replace with your server-side secret key
@@ -37,4 +30,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $success = false;
     }
 }
-?>
